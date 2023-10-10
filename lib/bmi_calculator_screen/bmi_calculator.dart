@@ -97,7 +97,7 @@ class _BMICalculatorState extends State<BMICalculator> {
                       children: [
                         Text(
                           "${height.round()}",
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 30,
                             fontWeight: FontWeight.bold,
                           ),
@@ -142,10 +142,11 @@ class _BMICalculatorState extends State<BMICalculator> {
                       });
                     },
                     sub: () {
-                      if (weight > 0)
+                      if (weight > 0) {
                         setState(() {
                           weight--;
                         });
+                      }
                     },
                     tagAdd: 'weightAdd',
                     tagSub: 'weightSub',
@@ -162,10 +163,11 @@ class _BMICalculatorState extends State<BMICalculator> {
                       });
                     },
                     sub: () {
-                      if (age > 0)
+                      if (age > 0) {
                         setState(() {
                           age--;
                         });
+                      }
                     },
                     tagAdd: 'ageAdd',
                     tagSub: 'ageSub',

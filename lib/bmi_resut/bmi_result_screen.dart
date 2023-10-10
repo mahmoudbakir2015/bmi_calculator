@@ -41,21 +41,21 @@ class BMIResult extends StatelessWidget {
                   children: [
                     Text(
                       "GENDER : $type ",
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
                       ),
                     ),
                     Text(
                       "RESULT : ${result.round()}",
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
                       ),
                     ),
                     Text(
                       "AGE : $age ",
-                      style: TextStyle(
+                      style:const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
                       ),
